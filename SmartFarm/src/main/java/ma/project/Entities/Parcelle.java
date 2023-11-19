@@ -23,19 +23,27 @@ public class Parcelle {
 	@ManyToOne
 	private Ferme ferme;
 	
-	@ManyToMany
-	private List<Plante> plantes;
-	
-	@ManyToMany(mappedBy = "parcelles")
-	private List<Boitier> boitiers;
 
 	public Parcelle() {
 		super();
 	}
 
+	
+
+
 	public Long getId() {
 		return id;
 	}
+
+	public Ferme getFerme() {
+		return ferme;
+	}
+
+
+	public void setFerme(Ferme ferme) {
+		this.ferme = ferme;
+	}
+
 
 	public void setId(Long id) {
 		this.id = id;

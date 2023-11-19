@@ -18,6 +18,7 @@ public class Mesure {
 	public Mesure() {
 		super();
 	}
+	
 	public Long getId() {
 		return id;
 	}

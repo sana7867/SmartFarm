@@ -19,13 +19,13 @@ public class Plante {
 	private Long humiditeLimiteMin;
 	private Long humiditeLimiteMax;
 	
-	@ManyToMany(mappedBy = "plantes")
-	@JsonIgnore
-	private List<Parcelle> parcelles;
 	
 	public Plante() {
 		super();
 	}
+	
+
+
 	public Long getId() {
 		return id;
 	}

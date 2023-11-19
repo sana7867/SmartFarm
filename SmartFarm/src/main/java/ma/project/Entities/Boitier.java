@@ -16,10 +16,6 @@ public class Boitier {
 	private String ref;
 	private String type;
 
-	@ManyToMany
-	private List<Parcelle> parcelles;
-	@ManyToMany(mappedBy = "boitiers")
-	private List<Capteur> capteurs;
 
 	public Boitier() {
 		super();

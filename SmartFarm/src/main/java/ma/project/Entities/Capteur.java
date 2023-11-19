@@ -22,14 +22,6 @@ public class Capteur {
          // binaire volumineux (BLOB)
     private byte[] photo;
 
-    @ManyToMany
-    @JoinTable(
-        name = "boitier_capteur", // Assurez-vous que le nom de la table de jointure correspond à votre base de données
-        joinColumns = @JoinColumn(name = "capteur_id"), // Correction ici, "capteur_id" est la colonne de jointure pour Capteur
-        inverseJoinColumns = @JoinColumn(name = "boitier_id")
-    )
-    private List<Boitier> boitiers;
-
     public Capteur() {
         super();
     }

@@ -16,8 +16,8 @@ public class Ferme {
 	private Long id;
 	private String nom;
 	
-	 @Lob // Cette annotation indique à Hibernate de traiter le champ comme un objet binaire volumineux (BLOB)
-	  private byte[] photo;
+	@Lob // Cette annotation indique à Hibernate de traiter le champ comme un objet binaire volumineux (BLOB)
+	private byte[] photo;
 	@ManyToOne
 	private Agriculture agriculture;
 	
